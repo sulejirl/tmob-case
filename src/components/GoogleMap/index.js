@@ -23,7 +23,7 @@ const SimpleMap = ({onSetCoordinates}) => {
     return (
         <div style={{height: '90vh', width: '100%'}}>
             <GoogleMapReact
-                bootstrapURLKeys={{key: 'AIzaSyCkiugvi26IVEHnNN8z0cl3rimBW3rPQNI'}}
+                bootstrapURLKeys={{key: process.env.REACT_APP_GOOGLE_API_KEY}}
                 defaultCenter={defaultMapProps.center}
                 defaultZoom={defaultMapProps.zoom}
                 onClick={onMapClick}
